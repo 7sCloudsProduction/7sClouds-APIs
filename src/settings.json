@@ -35,7 +35,7 @@
         {
           "name": "YouTube MP3",
           "desc": "Download YouTube video as MP3",
-          "path": "/random/ytmp3?url=",
+          "path": "/download/ytmp3?url=",
           "status": "ready",
           "params": {
             "url": "URL YouTube yang ingin di-download menjadi MP3"
