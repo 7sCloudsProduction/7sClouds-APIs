@@ -32,6 +32,15 @@
             "text": "Teks atau perintah untuk chat AI"
           }
         }
+        {
+          "name": "YouTube MP3",
+          "desc": "Download YouTube video as MP3",
+          "path": "/download/ytmp3?url=",
+          "status": "ready",
+          "params": {
+            "url": "URL YouTube yang ingin di-download menjadi MP3"
+          }
+        }
       ]
     },
     {
