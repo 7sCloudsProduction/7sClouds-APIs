@@ -26,7 +26,7 @@
         {
           "name": "Gemini",
           "desc": "AI Assistant by 7sClouds Team – chat dengan Gemini AI",
-          "path": "/ai/gemini?text=",
+          "path": "/ai/hydromine?text=",
           "status": "ready",
           "params": {
             "text": "Teks atau perintah untuk chat AI"
