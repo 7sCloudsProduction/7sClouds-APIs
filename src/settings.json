@@ -7,7 +7,7 @@
     "status": "Online!"
   },
   "apiSettings": {
-    "creator": "7sClouds Team",
+    "creator": "7sClouds Team", 
     "apikey": ["7sclouds"]
   },
   "categories": [
@@ -24,24 +24,25 @@
           }
         },
         {
-          "name": "Gemini",
-          "desc": "AI Assistant by 7sClouds Team – chat dengan Gemini AI",
-          "path": "/ai/hydromine?text=",
+          "name": "HydroMind",
+          "desc": "See the list of supported AI models here: https://mind.hydrooo.web.id",
+          "path": "/ai/hydromind?text=&model=",
           "status": "ready",
           "params": {
-            "text": "Teks atau perintah untuk chat AI"
-          }
-        }
-        {
-          "name": "YouTube MP3",
-          "desc": "Download YouTube video as MP3",
-          "path": "/download/ytmp3?url=",
-          "status": "ready",
-          "params": {
-            "url": "URL YouTube yang ingin di-download menjadi MP3"
+            "text": "Teks atau perintah untuk chat AI",
+            "model": "1See the list of supported AI models here: https://mind.hydrooo.web.id"
           }
         }
       ]
+    },
+    {
+      "name": "Gemini",
+      "desc": "AI Assistant by 7sClouds Team – chat dengan Gemini AI",
+      "path": "/ai/gemini?text=",
+      "status": "ready",
+      "params": {
+        "text": "Teks atau perintah untuk chat AI"
+      }
     },
     {
       "name": "Random",
@@ -64,6 +65,15 @@
           "status": "ready",
           "params": {
             "q": "Search query"
+          }
+        },
+        {
+          "name": "YouTube MP3",
+          "desc": "Download YouTube video as MP3",
+          "path": "/download/ytmp3?url=",
+          "status": "ready",
+          "params": {
+            "url": "URL YouTube yang ingin di-download menjadi MP3"
           }
         }
       ]
