@@ -1,27 +1,33 @@
 const axios = require('axios');
-const FormData = require('form-data');
+
 module.exports = function(app) {
-    async function hydromind(content, model) {
-        const form = new FormData();
-        form.append('content', content);
-        form.append('model', model);
-        const { data } = await axios.post('https://mind.hydrooo.web.id/v1/chat/', form, {
-            headers: {
-                ...form.getHeaders(),
-            }
-        })
+    // Fungsi untuk panggil API Gemini
+    async function geminiAI(text) {
+        const { data } = await axios.get('https://api.zenzxz.my.id/ai/gemini', {
+            params: { text }
+        });
         return data;
     }
-    app.get('/ai/hydromind', async (req, res) => {
+
+    // Route API /ai/hydromind diganti untuk Gemini
+    app.get('/ai/gemini', async (req, res) => {
         try {
-            const { text, model } = req.query;
-            if (!text || !model) {
-                return res.status(400).json({ status: false, error: 'Text and Model is required' });
+            const { text } = req.query;
+            if (!text) {
+                return res.status(400).json({ status: false, error: 'Text is required' });
             }
-            const { result } = await hydromind(text, model);
+
+            const response = await geminiAI(text);
+
+            if (!response.status) {
+                return res.status(500).json({ status: false, error: 'Gemini API failed' });
+            }
+
             res.status(200).json({
                 status: true,
-                result
+                assistant: response.assistant,
+                uid: response.uid,
+                creator: response.creator
             });
         } catch (error) {
             res.status(500).json({ status: false, error: error.message });
