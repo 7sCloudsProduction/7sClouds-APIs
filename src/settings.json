@@ -24,15 +24,15 @@
           }
         },
        {
-          "name": "HydroMind",
-          "desc": "See the list of supported AI models here: https://mind.hydrooo.web.id",
-          "path": "/ai/hydromind?text=&model=",
-          "status": "ready",
-          "params": {
-            "text": "Teks atau perintah untuk chat AI",
-            "model":"1See the list of supported AI models here: https://mind.hydrooo.web.id"
-          }
-        }
+          {
+  "name": "Gemini",
+  "desc": "AI Assistant by 7sClouds Team – chat dengan Gemini AI",
+  "path": "/ai/gemini?text=",
+  "status": "ready",
+  "params": {
+    "text": "Teks atau perintah untuk chat AI"
+  }
+       }
       ]
     },
     {
