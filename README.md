@@ -1,8 +1,8 @@
-# Falcon API UI
+# 7sClouds Apis
 
 A modern, clean, and user-friendly interface for browsing and testing Falcon API endpoints.
 
-![Falcon API UI Screenshot](image.png)
+![7sClouds APIs Screenshot](image.png)
 
 ## Features
 
