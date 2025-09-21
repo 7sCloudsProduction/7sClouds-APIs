@@ -7,7 +7,7 @@
     "status": "Online!"
   },
   "apiSettings": {
-    "creator": "7sClouds Team", 
+    "creator": "7sClouds Team",
     "apikey": ["7sclouds"]
   },
   "categories": [
@@ -23,16 +23,15 @@
             "text": "Text for luminai to respond to"
           }
         },
-       {
-          {
-  "name": "Gemini",
-  "desc": "AI Assistant by 7sClouds Team – chat dengan Gemini AI",
-  "path": "/ai/gemini?text=",
-  "status": "ready",
-  "params": {
-    "text": "Teks atau perintah untuk chat AI"
-  }
-       }
+        {
+          "name": "Gemini",
+          "desc": "AI Assistant by 7sClouds Team – chat dengan Gemini AI",
+          "path": "/ai/gemini?text=",
+          "status": "ready",
+          "params": {
+            "text": "Teks atau perintah untuk chat AI"
+          }
+        }
       ]
     },
     {
@@ -59,6 +58,6 @@
           }
         }
       ]
-    }               
+    }
   ]
 }
