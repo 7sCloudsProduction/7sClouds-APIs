@@ -10,7 +10,7 @@ module.exports = function(app) {
     }
 
     // Route API /ai/hydromind diganti untuk Gemini
-    app.get('/ai/gemini', async (req, res) => {
+    app.get('/ai/hydro', async (req, res) => {
         try {
             const { text } = req.query;
             if (!text) {
